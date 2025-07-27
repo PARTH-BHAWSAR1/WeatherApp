@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="transition duration-500 min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-light">
+
+  <button onclick="toggleTheme()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+    Toggle Theme
+  </button>
+
+  <h1 class="text-4xl font-bold text-white mb-6">🌤️ Weather App</h1>
+
+  <div class="flex gap-3 mb-6 w-full max-w-md">
+    <input
+      type="text"
+      id="cityInput"
+      placeholder="Enter city name..."
+      class="w-full px-4 py-2 rounded-lg text-black focus:outline-none"
+    />
+    <button
+      onclick="fetchWeather()"
+      class="bg-white text-blue-600 font-semibold px-4 py-2 rounded-lg shadow hover:scale-105 transition"
+    >
+      Search
+    </button>
+  </div>
+
+  <div id="loading" class="text-white text-lg hidden mb-4">Loading...</div>
+
+  <div id="weatherCard" class="hidden bg-white rounded-xl shadow-lg p-6 w-full max-w-md text-center text-gray-800">
+    <h2 id="location" class="text-2xl font-semibold mb-2"></h2>
+    <img id="icon" class="mx-auto" />
+    <p id="condition" class="text-xl mb-1"></p>
+    <p id="temperature" class="text-4xl font-bold mb-4"></p>
+    <div class="text-sm space-y-1">
+      <p id="wind"></p>
+      <p id="humidity"></p>
+      <p id="aqi"></p>
+      <p id="lastUpdated" class="text-gray-500"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

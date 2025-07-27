@@ -1,0 +1,10 @@
+/* Light/Dark mode support */
+[data-theme='dark'] body {
+  background-color: #1e293b;
+  color: white;
+}
+
+[data-theme='light'] body {
+  background-color: #93c5fd;
+  color: black;
+}
