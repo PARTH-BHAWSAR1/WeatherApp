@@ -10,7 +10,6 @@ This is a responsive and interactive weather app built using **HTML**, **Tailwin
 - 📍 Auto-detect user location (Geolocation API)
 - 🌗 Auto theme change (Light/Dark) based on time
 - 💡 Manual dark/light theme toggle
-- 🔁 Loading animation while fetching data
 - 🧠 Remembers last searched city using `localStorage`
 - 🎨 Tailwind CSS styling (fully responsive)
 
