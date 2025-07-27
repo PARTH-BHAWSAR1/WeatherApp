@@ -7,6 +7,6 @@ This is a responsive and interactive weather app built using **HTML**, **Tailwin
 ## 📁 Folder Structure
 
 weather-app/
-├── index.html # Main HTML structure
-├── style.css # Light/Dark theme styles
-└── script.js # All JavaScript logic
+├── index.html     # Main HTML structure
+├── style.css      # Light/Dark theme styles
+└── script.js      # All JavaScript logic
